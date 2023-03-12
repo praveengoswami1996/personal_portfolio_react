@@ -1,0 +1,77 @@
+.app__floatingbox {
+    width: 250px;
+    background-color: #fff;
+    border: 2px solid #eee;
+    border-radius: 15px;
+    padding: .5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: var(--box-shadow);
+}
+
+.app__floatingbox-img {
+    width: 30%;
+}
+
+.app__floatingbox-img img{
+    width: 100%;
+}
+
+.app__floatingbox-desc p {
+    margin-left: 0.5rem;
+    font-size: 18px;
+    font-weight: 600;
+    color: grey;
+}
+
+/**********************MEDIA QUERIES*****************************/
+
+@media screen and (max-width: 1150px) {
+    .app__floatingbox {
+        width: 220px;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .app__floatingbox {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .app__floatingbox {
+        width: initial;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .app__floatingbox {
+        width: 220px;
+    }
+}
+@media screen and (max-width: 600px){
+    .app__floatingbox {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .app__floatingbox {
+        width: 150px;
+    }
+    .app__floatingbox-desc p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .app__floatingbox {
+        width: 120px;
+        padding: 0.2rem;
+    }
+    .app__floatingbox-desc p {
+        font-size: 10px;
+    }
+}

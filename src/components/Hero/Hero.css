@@ -1,0 +1,302 @@
+.app__hero {
+    width: 100%;
+    min-height: 90vh;
+    padding-top: 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.app__hero-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.app__hero-text h1 {
+    font-size: 65px;
+    line-height: 84px;
+    color: #333;
+}
+
+.app__hero-text h1 span{
+    color: var(--orange);
+}
+
+.app__hero-text p {
+    font-size: 20px;
+    line-height: 30px;
+    color: gray;
+}
+
+.app__hero-text_socialIcons {
+    margin: 5rem 0rem 0rem 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.app__hero-image {
+    width: 1400px;
+    height: 700px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.app__hero-image_container {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.vectorimage1 {
+    width: 100%;
+    height: 100%;
+    transform: scale(1.1);
+    position: relative;
+    bottom: 5rem;
+}
+
+.floatingBox1, 
+.floatingBox2 {
+    position: absolute;
+    z-index: 1;
+}
+
+.floatingBox1{
+    top: 1rem;
+    right: 0.5rem;
+}
+
+.floatingBox2{
+    bottom: 9.5rem;
+    left: 0.5rem;
+}
+
+.background__effect1,
+.background__effect2 {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    z-index: 0;
+    position: absolute; 
+    filter: blur(50px);
+    background-color: lightcyan;
+}
+
+.background__effect1 {
+    bottom: 1rem;
+    left: -8rem
+}
+
+.background__effect2 {
+    right: -4rem;
+    top: -2rem;
+}
+
+
+/***********************MEDIA QUERIES************************/
+
+@media screen and (max-width: 1350px) {
+    .app__hero-image {
+        height: 650px;
+    }
+    .background__effect1,
+    .background__effect2 {
+        width: 15rem;
+        height: 15rem;
+    }
+    .app__hero-text_socialIcons {
+        margin: 2rem 0rem 0rem 1rem;
+    }
+}
+@media screen and (max-width: 1150px) {
+    .app__hero-image {
+        height: 620px;
+    }
+    .background__effect1,
+    .background__effect2 {
+        width: 12rem;
+        height: 12rem;
+    }
+    .app__hero-text p {
+        max-width: 350px;
+    }
+    .background__effect1 {
+        bottom: 3rem;
+        left: -2rem
+    }
+}
+@media screen and (max-width: 1050px) {
+    .app__hero-image {
+        height: 600px;
+    }
+}
+
+@media screen and (max-width: 990px){
+    .app__hero-text_socialIcons {
+        margin: 1rem 0rem 0rem 1rem;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .app__hero {
+        flex-direction: column;
+        padding-top: 6rem;
+        padding-left: 2.8rem;
+        padding-right: 2.8rem;
+        align-items: center;
+    }
+    .app__hero-text p {
+        max-width: none;
+    }
+    .app__hero-text_socialIcons {
+        margin: 2rem 0rem 0rem 1rem;
+    }
+    .app__hero-image {
+        margin-top: 2rem;
+        width: 700px;
+        height: 700px;
+    }
+    .background__effect1,
+    .background__effect2 {
+        width: 20rem;
+        height: 20rem;
+    }
+    .app__hero-text h1 {
+        font-size: 78px;
+        line-height: 95px;
+    }
+    .app__hero-text p {
+        font-size: 24px;
+        line-height: 34px;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .app__hero-text h1 {
+        font-size: 68px;
+        line-height: 90px;
+    }
+    .app__hero-text p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .app__hero-image {
+        width: 650px;
+        height: 650px;
+    }
+    .background__effect1,
+    .background__effect2 {
+        width: 14rem;
+        height: 14rem;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .app__hero-image {
+        margin-top: 4rem;
+        width: 550px;
+        height: 550px;
+    }
+    .app__hero-text h1 {
+        font-size: 65px;
+        line-height: 75px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .app__hero-image {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .app__hero {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .app__hero-image {
+        width: 450px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .app__hero-image {
+        width: 400px;
+        height: 450px;
+    }
+}
+@media screen and (max-width: 400px){
+    .app__hero-image {
+        width: 350px;
+    }  
+}
+
+@media screen and (max-width: 350px){
+    .background__effect1,
+    .background__effect2 {
+        width: 8rem;
+        height: 8rem;
+    }
+    .app__hero-text h1 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+    .app__hero-text p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .background__effect1 {
+        bottom: 7rem;
+    }
+    .background__effect2 {
+        right: -2rem;
+    }
+    .app__hero-image {
+        width: 350px;
+        height: 550px;
+    }
+    
+}
+@media screen and (max-width: 350px){
+    .app__hero-image {
+        width: 300px;
+        height: 450px;
+    }
+    .vectorimage1 {
+        transform: scale(1.3);
+    }
+}
+@media screen and (max-width: 300px){
+    .app__hero-image {
+        width: 250px;
+        height: 500px;
+        margin-top: 1rem;
+    }
+    .vectorimage1 {
+        transform: scale(1.3);
+    }
+    .app__hero-text h1 {
+        font-size: 45px;
+        line-height: 65px;
+    }
+}

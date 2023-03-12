@@ -1,0 +1,89 @@
+.app__skills {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.app__skills-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.app__skills-text h1 {
+    font-size: 65px;
+    line-height: 84px;
+    color: #333;
+}
+
+.app__skills-text h1 span{
+    color: var(--orange);
+}
+
+.app__skills-text_details p {
+    font-size: 20px;
+    line-height: 30px;
+    color: gray;
+    text-align: left;
+}
+
+.app__skills-logo {
+    flex: 1;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app__skills-logo_container {
+    max-width: 600px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/*********************MEDIA QUERIES***********************/
+
+@media screen and (max-width: 790px) {
+    .app__skills {
+        flex-direction: column;
+    }
+    .app__skills-logo {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .app__skills-text h1 {
+        width: 100%;
+        line-height: 75px;
+    }
+    .app__skills-logo {
+        padding: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .app__skills-text h1 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+    
+    .app__skills-text_details p {
+        font-size: 15px;
+        line-height: 24px;
+    }
+    .app__skills-logo {
+        padding: 0;
+    }
+}
