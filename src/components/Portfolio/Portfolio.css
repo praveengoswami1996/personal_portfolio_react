@@ -58,12 +58,18 @@
 /*****************MEDIA QUERIES***************************/
 
 @media screen and (max-width: 480px){
-    .app__portfolio {
-        padding-top: 2rem;
-    }
     .app__portfolio-projects {
         Padding: 0.5rem;
         gap:1rem;
     }
+    .app__portfolio-text h1 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+    .app__portfolio-details p {
+        font-size: 15px;
+        line-height: 24px;
+    }
 }
+
 

@@ -3,10 +3,14 @@ import { MdEmail, MdPhoneIphone, MdLocationPin } from 'react-icons/md';
 import { FaPaperPlane } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 import { useState, useRef } from 'react';
+import { themeContext } from '../../Context/Context';
+import { useContext } from 'react';
 
 const Contact = () => {
     const [mailSent, setMailSent] = useState(false);
     const form = useRef();
+    const { state } = useContext(themeContext);
+    const darkMode = state.darkMode;
 
     const sendEmail = (e) => {
       e.preventDefault();
@@ -45,11 +49,38 @@ const Contact = () => {
 
         <div className='app__contact-form'>
             <form ref={form} onSubmit={sendEmail}>
-                <input type="text" name="name" placeholder='Your name' className='inputfield'/>
+                <input 
+                    type="text" 
+                    name="name" 
+                    placeholder='Your name' 
+                    className='inputfield'
+                    style={{
+                        background: darkMode ? '#333': '#fff',
+                        color: darkMode ? '#fff': '#333'
+                    }}
+                />
 
-                <input type="email" name="email" placeholder='Your email' className='inputfield'/>
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder='Your email' 
+                    className='inputfield'
+                    style={{
+                        background: darkMode ? '#333': '#fff',
+                        color: darkMode ? '#fff': '#333'
+                    }}
+                />
 
-                <textarea name="message" placeholder='Your message' className='messagefield' rows={5}/>
+                <textarea 
+                    name="message" 
+                    placeholder='Your message' 
+                    className='messagefield' 
+                    rows={5}
+                    style={{
+                        background: darkMode ? '#333': '#fff',
+                        color: darkMode ? '#fff': '#333'
+                    }}
+                />
 
                 <div className='button_and_message'>
                     <button type='submit' className='custom__button'>

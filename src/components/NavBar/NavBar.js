@@ -35,7 +35,6 @@ const NavBar = () => {
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#testimonials">Education</a></li>
             </ul>
             
             <div className='app__navbar-navlinks_smalldevices'>
@@ -45,11 +44,10 @@ const NavBar = () => {
                 <div className='overlay slide-top' style={{background: darkMode ? 'black': '#fff'}}>
                   <FaTimes size={32} onClick={() => setToggleMenu(false)}/>
                   <ul className='smalldevices-links'>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#certifications">Certifications</a></li>
-                    <li><a href="#testimonials">Education</a></li>
+                    <li onClick={() => setToggleMenu(false)}><a href="#home">Home</a></li>
+                    <li onClick={() => setToggleMenu(false)}><a href="#skills">Skills</a></li>
+                    <li onClick={() => setToggleMenu(false)}><a href="#portfolio">Portfolio</a></li>
+                    <li onClick={() => setToggleMenu(false)}><a href="#certifications">Certifications</a></li>
                   </ul>
                 </div>
               }

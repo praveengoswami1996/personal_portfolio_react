@@ -160,7 +160,7 @@
     }
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 480px) {
     .app__navbar-logo_img {
         width: 150px;
     }
@@ -168,7 +168,7 @@
 
 @media screen and (max-width: 320px) {
     .app__navbar-logo_img {
-        width: 110px;
+        width: 120px;
     }
 }
 

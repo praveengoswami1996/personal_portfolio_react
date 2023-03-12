@@ -4,7 +4,7 @@
     padding-top: 7rem;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 2rem;
 }
@@ -32,7 +32,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .app__contact-details_info div {
@@ -54,7 +54,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 3rem;
+    padding: 2rem;
     background-color: gold;
     background-image: linear-gradient(to right, var(--orange), var(--yellow));
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -72,13 +72,12 @@
 .app__contact-form form .inputfield,
 .app__contact-form form .messagefield{
     width: 100%;
-    padding: 1rem 0.8rem;
+    padding: 15px 10px;
     border: none;
     border-radius: 15px;
     font-size: 20px;
     font-weight: 600;
     color: #333;
-    box-shadow: 0px 4px 8px lightgray inset;
 }
 
 .app__contact-form form button {
@@ -99,4 +98,61 @@
 
 .app__contact-form .button_and_message .successmessage {
     font-size: 20px;
+}
+
+/******************MEDIA QUERIES***********************/
+
+@media screen and (max-width: 950px) {
+    .app__contact {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 2.8rem;
+        padding-right: 2.8rem;
+    }
+    .app__contact-details {
+        width: 100%;
+    }
+    .app__contact-form {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 590px) {
+    .app__contact {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .app__contact {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .app__contact-details h1 {
+        font-size: 55px;
+        line-height: 70px;
+    }
+    
+    .app__contact-details_info p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .app__contact-form {
+        padding: 1rem;
+    }
+    
+}
+
+@media screen and (max-width: 320px) {
+    .app__contact-details_info p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .app__contact-form form .inputfield,
+    .app__contact-form form .messagefield{
+        padding: 10px;
+        font-size: 14px;
+    }
 }

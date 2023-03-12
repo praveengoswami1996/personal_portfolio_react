@@ -292,9 +292,6 @@
         height: 500px;
         margin-top: 1rem;
     }
-    .vectorimage1 {
-        transform: scale(1.3);
-    }
     .app__hero-text h1 {
         font-size: 45px;
         line-height: 65px;

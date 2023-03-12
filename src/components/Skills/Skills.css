@@ -54,9 +54,20 @@
 
 /*********************MEDIA QUERIES***********************/
 
-@media screen and (max-width: 790px) {
+@media screen and (max-width: 950px) {
+    .app__skills {
+        padding-left: 2.8rem;
+        padding-right: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .app__skills {
+        padding-top: 6rem;
+    }
     .app__skills {
         flex-direction: column;
+        align-items: flex-start;
     }
     .app__skills-logo {
         width: 100%;
@@ -64,13 +75,17 @@
 }
 
 @media screen and (max-width: 590px) {
+    .app__skills {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .app__skills-text h1 {
         width: 100%;
         line-height: 75px;
     }
     .app__skills-logo {
         padding: 1rem;
-    }
+    }    
 }
 
 @media screen and (max-width: 480px) {
