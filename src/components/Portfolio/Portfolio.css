@@ -47,7 +47,7 @@
 
 .app__portfolio-projects {
     width: 100%;
-    Padding: 2rem 3rem;
+    Padding: 2rem 1rem;
     display: flex;
     justify-content: center;
     align-items: flex-start;
