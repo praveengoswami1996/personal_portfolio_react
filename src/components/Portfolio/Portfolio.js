@@ -4,7 +4,7 @@ import { Projects } from '../../constants';
 import { useState } from 'react';
 
 const Portfolio = () => {
-  const [currentPage, setCurrentPage] = useState(2);
+  const [currentPage, setCurrentPage] = useState(1);
   const projectsPerPage = 3;
   
   const lastProjectIndex = currentPage * projectsPerPage;
