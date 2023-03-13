@@ -1,8 +1,105 @@
 .app__footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: -1rem -3.5rem;
-    margin-top: 0rem;
+    margin-top: -7rem;
+    position: relative;
 }
 
 .app__footer img {
     width: 100%;
+}
+
+.app__footer-content {
+    width: 100%;
+    position: absolute;
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 7rem;
+}
+
+.app__footer-content_copyright {
+    font-size: 24px;
+    color: #fff;
+}
+
+.app__footer-content_socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.app__footer-content_socialIcons .icon{
+    font-size: 44px;
+    color: #fff;
+}
+
+/************************MEDIA QUERIES*************************/
+
+@media screen and (max-width: 1050px) {
+    .app__footer-content {
+        gap: 5rem;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .app__footer {
+        margin-top: 0rem;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .app__footer-content {
+        margin-top: 6rem;
+        gap: 4rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__footer-content {
+        margin-top: 4rem;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .app__footer-content_copyright {
+        font-size: 20px;
+    }
+    .app__footer-content_socialIcons {
+        gap: 1rem;
+    }
+    .app__footer-content_socialIcons .icon{
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .app__footer-content_copyright {
+        font-size: 16px;
+    }
+    .app__footer-content_socialIcons {
+        gap: 0.8rem;
+    }
+    .app__footer-content_socialIcons .icon{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .app__footer-content {
+        margin-top: 3rem;
+        gap: 1rem;
+    }
+    .app__footer-content_copyright {
+        font-size: 14px;
+    }
+    .app__footer-content_socialIcons .icon{
+        font-size: 24px;
+    }
 }
