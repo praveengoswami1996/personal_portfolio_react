@@ -7,14 +7,28 @@ import { themeContext } from '../../Context/Context';
 import { useContext } from 'react';
 
 const Contact = () => {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
     const [mailSent, setMailSent] = useState(false);
     const form = useRef();
     const { state } = useContext(themeContext);
     const darkMode = state.darkMode;
 
+    const handleNameInput = (event) => {
+        setName(event.target.value);
+    }
+
+    const handleEmailInput = (event) => {
+        setEmail(event.target.value);
+    }
+
+    const handleMessageInput = (event) => {
+        setMessage(event.target.value);
+    }
+
     const sendEmail = (e) => {
       e.preventDefault();
-  
       emailjs.sendForm('service_5izq7sj', 'template_7m41zlu', form.current, 'Obmi0LVx71qqNZa2j')
         .then((result) => {
             setMailSent(true);
@@ -22,6 +36,9 @@ const Contact = () => {
             console.log(error.text);
             alert("Your message could not be sent. We are sorry for the inconvenience.")
         });
+      setName('');
+      setEmail('');
+      setMessage('');
     };  
 
 
@@ -51,7 +68,9 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
                 <input 
                     type="text" 
-                    name="name" 
+                    name="name"
+                    value={name}
+                    onChange={handleNameInput} 
                     placeholder='Your name' 
                     className='inputfield'
                     style={{
@@ -62,7 +81,9 @@ const Contact = () => {
 
                 <input 
                     type="email" 
-                    name="email" 
+                    name="email"
+                    value={email}
+                    onChange={handleEmailInput} 
                     placeholder='Your email' 
                     className='inputfield'
                     style={{
@@ -73,6 +94,8 @@ const Contact = () => {
 
                 <textarea 
                     name="message" 
+                    value={message}
+                    onChange={handleMessageInput}
                     placeholder='Your message' 
                     className='messagefield' 
                     rows={5}
