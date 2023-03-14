@@ -99,6 +99,7 @@
 
 .app__contact-form .button_and_message .successmessage {
     font-size: 20px;
+    margin-left: 1rem;
 }
 
 /******************MEDIA QUERIES***********************/
@@ -146,6 +147,19 @@
     
 }
 
+@media screen and (max-width: 410px) {
+    .app__contact-form .button_and_message .successmessage {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .app__contact-form .button_and_message .successmessage {
+        font-size: 12px;
+        margin-left: 0.4rem;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .app__contact-details_info p {
         font-size: 13px;
@@ -155,5 +169,9 @@
     .app__contact-form form .messagefield{
         padding: 10px;
         font-size: 14px;
+    }
+    .app__contact-form .button_and_message .successmessage {
+        font-size: 8px;
+        margin-left: 0.4rem;
     }
 }
