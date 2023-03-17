@@ -10,7 +10,6 @@ import Typewriter from 'typewriter-effect';
 const transition = { duration: 2, type: 'spring' }
 
 const Hero = () => {
-  console.log(window.innerWidth);
 
   return (
     <section className='app__hero' id="home">
