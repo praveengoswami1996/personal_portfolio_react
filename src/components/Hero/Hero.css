@@ -20,11 +20,12 @@
 
 .app__hero-text h1 {
     font-size: 65px;
-    line-height: 75px;
+    line-height: 80px;
     color: #333;
 }
 
 .app__hero-text h1 span{
+    font-size: 54px;
     color: var(--orange);
 }
 
