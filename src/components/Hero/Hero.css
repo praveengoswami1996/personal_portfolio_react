@@ -183,6 +183,10 @@
     }
 }
 
+@media screen and (max-width: 920px){
+    
+}
+
 @media screen and (max-width: 850px){
     .app__hero-text h1 {
         font-size: 68px;

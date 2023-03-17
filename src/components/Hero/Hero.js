@@ -5,15 +5,32 @@ import heroimage from '../../assets/heroimage.svg';
 import Praveen from './Praveen.pdf';
 import { thumbup, crownImage } from '../../assets';
 import { motion } from "framer-motion";
+import Typewriter from 'typewriter-effect';
 
 const transition = { duration: 2, type: 'spring' }
 
 const Hero = () => {
+  console.log(window.innerWidth);
+
   return (
     <section className='app__hero' id="home">
 
         <div className='app__hero-text'>
-            <h1>Hi! I Am<br /><span>Praveen Goswami</span></h1>
+            <h1>Hi! I Am<br />
+              <span>
+                <Typewriter 
+                  options={{
+                    autoStart: true, 
+                    loop: true, 
+                    delay: 60,
+                    strings: [
+                      "Praveen Goswami",
+                      "React Developer",
+                      "Frontend Developer"
+                    ]}}
+                />
+              </span>
+            </h1>
             
             <p>Frontend Developer with high level of experience in web designing and development. Producing the quality work.</p>
 
