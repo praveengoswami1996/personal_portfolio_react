@@ -304,6 +304,10 @@
         width: 450px;
         height: 500px;
     }
+    .app__hero-text_static {
+        font-size: 45px;
+        line-height: 55px;
+    }
 }
 
 @media screen and (max-width: 450px){
@@ -348,10 +352,6 @@
     }
     .vectorimage1 {
         transform: scale(1.3);
-    }
-    .app__hero-text_static {
-        font-size: 45px;
-        line-height: 55px;
     }
     .app__hero-text_dynamic {
         font-size: 20px;
