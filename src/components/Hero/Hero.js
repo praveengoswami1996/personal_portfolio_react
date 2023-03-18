@@ -13,24 +13,22 @@ const Hero = () => {
 
   return (
     <section className='app__hero' id="home">
-
+        
         <div className='app__hero-text'>
-            <h1>Hi! I Am<br />
-              <span>
-                <Typewriter 
-                  options={{
-                    autoStart: true, 
-                    loop: true, 
-                    delay: 60,
-                    strings: [
-                      "Praveen Goswami",
-                      "A React Developer",
-                      "A Frontend Developer"
-                    ]}}
-                />
-              </span>
+            <h1 className='app__hero-text_static'>Hi! I Am</h1>
+            <h1 className='app__hero-text_dynamic'>
+              <Typewriter 
+                options={{
+                  autoStart: true, 
+                  loop: true, 
+                  delay: 60,
+                  strings: [
+                    "Praveen Goswami",
+                    "A Frontend Developer"
+                  ]}}
+              />
             </h1>
-            
+              
             <p>Frontend Developer with high level of experience in web designing and development. Producing the quality work.</p>
 
             <a href={Praveen} download>
