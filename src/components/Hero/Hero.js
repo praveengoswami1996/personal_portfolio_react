@@ -24,6 +24,8 @@ const Hero = () => {
                   delay: 60,
                   strings: [
                     "Praveen Goswami",
+                    "A React Developer",
+                    "A Web Developer",
                     "A Frontend Developer"
                   ]}}
               />
