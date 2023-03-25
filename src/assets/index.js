@@ -36,6 +36,7 @@ import pythoncert from '../assets/pythoncert.png';
 import djangocert from '../assets/djangocert.png';
 import cpluscert from '../assets/cpluscert.png';
 import wave from '../assets/wave.png';
+import emojirating from '../assets/emojirating.png';
 
 export {
     htmlLogo,
@@ -75,5 +76,6 @@ export {
     pythoncert,
     djangocert,
     cpluscert,
-    wave
+    wave,
+    emojirating
 }

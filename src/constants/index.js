@@ -1,4 +1,4 @@
-import { modernbankapp, modernrestapp, gpt3, mymedia, myreadinglist, weatherapp, getpics, mycars, navbar, layout, timerreact, timerjs, animal, reactcert, webdevcert, pythoncert, djangocert, cpluscert, htmlLogo, cssLogo, jsLogo, reactLogo, reactreduxLogo, reactrouterLogo, tailwind, resdesignLogo, gitLogo, cLogo, cplusLogo, pythonLogo, djangoLogo } from "../assets";
+import { modernbankapp, modernrestapp, gpt3, mymedia, myreadinglist, weatherapp, getpics, mycars, navbar, layout, timerreact, timerjs, animal, reactcert, webdevcert, pythoncert, djangocert, cpluscert, htmlLogo, cssLogo, jsLogo, reactLogo, reactreduxLogo, reactrouterLogo, tailwind, resdesignLogo, gitLogo, cLogo, cplusLogo, pythonLogo, djangoLogo, emojirating } from "../assets";
 
 export const Projects = [
     {
@@ -93,6 +93,15 @@ export const Projects = [
     },
     {
         id: 11,
+        title: "Emoji Rating App",
+        stack: ["HTML", "CSS", "JavaScript","React"],
+        screenshot: emojirating,
+        description: 'This is a simple but Funny Emoji Rating App built in React. A User can give rating by clicking on stars and a relevant emoji will appear on the screen accordingly.',
+        githubLink: 'https://github.com/praveengoswami1996/emoji-rating-app',
+        deploylink: 'https://pg1996-emojirating-react.netlify.app/'  
+    },
+    {
+        id: 12,
         title: "Stopwatch React",
         stack: ["HTML", "CSS", "JavaScript","React"],
         screenshot: timerreact,
@@ -101,7 +110,7 @@ export const Projects = [
         deploylink: 'https://pg1996-stopwatch-react.netlify.app/'  
     },
     {
-        id: 12,
+        id: 13,
         title: "Stopwatch JavaScript",
         stack: ["Hypertext Markup Language (HTML)", "CSS", "JavaScript"],
         screenshot: timerjs,
@@ -110,7 +119,7 @@ export const Projects = [
         deploylink: 'https://pg1996-stopwatch-vanillajs.netlify.app/'  
     },
     {
-        id: 13,
+        id: 14,
         title: "Animal Image Generator",
         stack: ["HTML", "CSS", "JavaScript", "React"],
         screenshot: animal,
