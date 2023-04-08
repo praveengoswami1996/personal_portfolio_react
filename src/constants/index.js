@@ -1,4 +1,4 @@
-import { modernbankapp, modernrestapp, gpt3, mymedia, myreadinglist, weatherapp, getpics, mycars, navbar, layout, timerreact, timerjs, animal, reactcert, webdevcert, pythoncert, djangocert, cpluscert, htmlLogo, cssLogo, jsLogo, reactLogo, reactreduxLogo, reactrouterLogo, tailwind, resdesignLogo, gitLogo, cLogo, cplusLogo, pythonLogo, djangoLogo, emojirating } from "../assets";
+import { modernbankapp, modernrestapp, gpt3, mymedia, myreadinglist, weatherapp, getpics, mycars, navbar, layout, timerreact, timerjs, animal, reactcert, webdevcert, pythoncert, djangocert, cpluscert, htmlLogo, cssLogo, jsLogo, reactLogo, reactreduxLogo, reactrouterLogo, tailwind, resdesignLogo, gitLogo, cLogo, cplusLogo, pythonLogo, djangoLogo, emojirating, reactcalc } from "../assets";
 
 export const Projects = [
     {
@@ -102,6 +102,15 @@ export const Projects = [
     },
     {
         id: 12,
+        title: "React Calculator",
+        stack: ["HTML", "CSS", "JavaScript","React"],
+        screenshot: reactcalc,
+        description: 'This is a Calculator App built completely in React. One can perform basic mathematical operations such as addition, subtraction, multiplication, division using this calculator app.',
+        githubLink: 'https://github.com/praveengoswami1996/React-Calculator',
+        deploylink: 'https://pg1996-calculator-react.netlify.app/'  
+    },
+    {
+        id: 13,
         title: "Stopwatch React",
         stack: ["HTML", "CSS", "JavaScript","React"],
         screenshot: timerreact,
@@ -110,7 +119,7 @@ export const Projects = [
         deploylink: 'https://pg1996-stopwatch-react.netlify.app/'  
     },
     {
-        id: 13,
+        id: 14,
         title: "Stopwatch JavaScript",
         stack: ["Hypertext Markup Language (HTML)", "CSS", "JavaScript"],
         screenshot: timerjs,
@@ -119,8 +128,8 @@ export const Projects = [
         deploylink: 'https://pg1996-stopwatch-vanillajs.netlify.app/'  
     },
     {
-        id: 14,
-        title: "Animal Image Generator",
+        id: 15,
+        title: "Animal Generator",
         stack: ["HTML", "CSS", "JavaScript", "React"],
         screenshot: animal,
         description: 'This project shows how we can dynamically generate a list of components in React.',
